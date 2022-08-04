@@ -1,0 +1,6 @@
+{
+  "name": "Example Plugin with Integer",
+  "author": "GuideWire",
+  "version": "0.0.0.1",
+  "mainClass": "com.example.Plugin"
+}
