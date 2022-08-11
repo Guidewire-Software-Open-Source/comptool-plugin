@@ -4,6 +4,7 @@ JAR_NAME = test
 linux: macos
 
 macos:
+	rm $(JAR_NAME).jar
 	@./gradlew jar
 	@mv backend.jar $(JAR_NAME).jar
 	@jar -uf $(JAR_NAME).jar manifest.json
@@ -18,6 +19,7 @@ macos:
 	@jar -tf $(JAR_NAME).jar
 
 windows:
+	-cmd /c del $(JAR_NAME).jar /s /q
 	@./gradlew jar
 	@ren backend.jar $(JAR_NAME).jar
 	@jar -uf $(JAR_NAME).jar manifest.json

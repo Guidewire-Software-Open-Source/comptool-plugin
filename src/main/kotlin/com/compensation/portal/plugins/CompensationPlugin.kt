@@ -4,7 +4,7 @@ import com.compensation.portal.dataclasses.compensation.Compensable
 import com.compensation.portal.dataclasses.compensation.HistoricalData
 
 abstract class CompensationPlugin : HistoricalData, Compensable {
-    var fieldTypes: HashMap<String, PluginFieldTypes> = HashMap();
+    var fieldTypes: LinkedHashMap<String, PluginFieldTypes> = LinkedHashMap();
 
 
     constructor() : super();
