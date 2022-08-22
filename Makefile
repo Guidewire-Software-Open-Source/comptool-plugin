@@ -4,7 +4,7 @@ JAR_NAME = test
 linux: macos
 
 macos:
-	rm $(JAR_NAME).jar
+	-rm $(JAR_NAME).jar
 	@./gradlew jar
 	@mv backend.jar $(JAR_NAME).jar
 	@jar -uf $(JAR_NAME).jar manifest.json
